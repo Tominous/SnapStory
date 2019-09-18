@@ -76,9 +76,9 @@ def download(username, singleStory=False):
                 # We cant download images anymore. Its not in the JSON
                 # response. But I just commented it out incase it comes
                 # back.
-                #if media["media"]["type"] == "IMAGE":
-                    #file_ext = ".jpg"
-                    #filetype = "IMAGE"
+                if media["media"]["type"] == "IMAGE":
+                    file_ext = ".jpg"
+                    filetype = "IMAGE"
 
                 if media["media"]["type"] == "VIDEO":
                     file_ext = ".mp4"
